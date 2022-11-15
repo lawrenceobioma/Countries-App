@@ -1,0 +1,48 @@
+@font-face {
+    font-family: nunito;
+    src: url(../fonts/NunitoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: nunito-bold;
+    src: url(../fonts/NunitoSans-ExtraBold.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: nunito;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav p{
+    font-family: nunito-bold;
+    font-size: 20px;
+    padding-left: 3.5em;
+    font-weight: 900;
+}
+.nav .view-button{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: -4em;
+    font-weight: 500;
+    gap: .7em;
+}
+
+@media (max-width: 700px) {
+    .nav .view-button{
+        font-size: 10px;
+    }
+    .nav p{
+        padding-left: 1.5em;
+        font-size: 15px;
+    }
+
+}
+
+
+
+

@@ -1,0 +1,143 @@
+@font-face {
+  font-family: nunito;
+  src: url(../fonts/NunitoSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: nunito-bold;
+  src: url(../fonts/NunitoSans-ExtraBold.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: nunito;
+  font-size: 16px;
+}
+
+.country-container {
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+}
+.back-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+  margin-left: 4em;
+  background-color: white;
+  border: 1px solid rgb(205, 205, 205);
+  padding: 0.5em 4.5em;
+  border-radius: 5%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 25px;
+  background-size: 25px;
+  cursor: pointer;
+}
+
+.back-logo {
+  background-image: url(../images/light-pointarrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.country-profile {
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+  align-items: center;
+  padding: 0em 4em;
+  margin-top: 5%;
+}
+
+.country-profile .country-flag {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  align-self: flex-start; 
+filter: drop-shadow(5px 5px 10px #262626);}
+
+.country-profile .country-details-container {
+  display: flex;
+  max-width: 500px;
+  flex: 2;
+  flex-direction: column;
+}
+
+.country-details-container .country-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 3em;
+  overflow-wrap: none;
+}
+
+.country-details-container .country-details ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 0.8em;
+  text-align: left;
+  padding-left: 0px;
+}
+
+.country-details-container .country-details .box1 {
+  flex: 4;
+}
+
+.country-details-container h1 {
+  align-self: flex-start;
+  font-family: nunito-bold;
+  margin-bottom: 0px;
+  font-size: 30px;
+}
+
+.country-details b {
+  font-weight: 600;
+}
+
+.country-borders-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  padding-top: 5%;
+  margin-bottom: 5%;
+}
+
+.borders-button {
+  padding: 5px 30px;
+  background-color: white;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .country-details-container .country-details {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+@media (max-width: 800px) {
+  .country-profile {
+    flex-direction: column;
+    padding: 0em 2em;
+    align-items: flex-start;
+  }
+  .country-profile .country-flag {
+    padding: 2em 0em;
+    align-self: center;
+  }
+}
+
+@media (max-width: 500px) {
+  * {
+    font-size: 12px;
+  }
+
+  .back-button {
+    margin-left: 2em;
+  }
+}
